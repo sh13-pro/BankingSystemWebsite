@@ -1,0 +1,68 @@
+*{
+ margin: 0; padding: 0; box-sizing: border-box; font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+ width: 100%; height: 100vh; background-image: url(../img/piggy.jpg); background-size: 100%;background-repeat: no-repeat;
+}
+
+nav {
+ width: 100%; height: 15vh; color: aliceblue; display: flex; justify-content: space-between;align-items: center; text-transform: uppercase; background-color: rgba(0,0,0,0.2);
+}
+
+nav .logo {
+ width: 25%; text-align: center; font-size: 4vh;
+}
+
+nav .Menu {
+ width: 50%; display: flex; justify-content: space-around; 
+}
+
+nav .Menu a {
+ text-decoration: none; color: aliceblue;
+
+}
+nav .Menu a:hover{
+ color:  #41ff41;
+ transform: .5s ease;
+}
+
+main {
+ width: 100%; height: 20vh; padding: 80px; font-weight: bolder; font-size: 5vh;
+ display: flex; justify-content: left; align-items: left; color: aliceblue; text-align: left;
+}
+
+section p{
+ font-size: 25px; font-weight: 200; text-shadow: 2px 1px 5px black;
+}
+section h3{
+ font-weight: bold; text-shadow: 2px 1px 5px black;
+}
+
+.change:after{
+ content: '';
+ animation: changetext 10s infinite linear; color: #41ff41; text-shadow: 2px 1px 5px black;
+}
+
+@keyframes changetext {
+ 0%{content: 'Wear Mask';}
+ 20%{content: 'Avoid Social gatherings';}
+ 35%{content: 'Wash Hands regularly';}
+ 60%{content: 'Keep calm';}
+ 80%{content: 'Maintain 6-feet distance';}
+ 100%{content: 'Use sanitizer';}
+ 
+}
+footer{
+	color:#ffffff;
+	background-color:#000000;
+	letter-spacing: 0.5px;
+}
+footer p{
+	margin: 0;
+	font-size: 15px;
+ text-align: center;
+}
+
+
+
